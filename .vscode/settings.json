@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "sachin1024",
+        "projectKey": "sachin1024_snyk-test"
+    }
+}

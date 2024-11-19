@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { merge } from 'lodash';  // v4.17.15
+import { merge, unique } from 'lodash';  // v4.17.15
 import $ from 'jquery';  // v2.2.4
 import moment from 'moment';  // v2.24.0
 import serialize from 'node-serialize';  // v0.0.4
@@ -62,6 +62,8 @@ const VulnerableSnykComponent = () => {
       // Vulnerable to template injection
       const compiled = Handlebars.compile(template);
       const result = compiled({});
+      const demo =  unique([11,10,11])
+      unique([11,10,11])
       setResults(prev => ({ ...prev, handlebarsResult: result }));
     } catch (error) {
       console.error('Handlebars compilation error:', error);
