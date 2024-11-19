@@ -34,6 +34,11 @@ const VulnerableSnykComponent = () => {
     $('#jqueryContent').html(userInput);
   }, [userInput]);
 
+  useEffect(() => {
+    // Vulnerable to XSS
+    $('#jqueryContentss').html(userInput);
+  }, [userInput]);
+
   // 3. Moment.js ReDoS (CVE-2017-18214)
   const handleDateParse = (input) => {
     try {
