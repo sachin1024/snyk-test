@@ -9,7 +9,7 @@ import WebSocket from 'ws';  // v7.2.1
 import axios from 'axios';  // v0.19.0
 import 'bootstrap';  // v4.1.2
 
-const VulnerableMegaComponent = () => {
+const VulnerableSnykComponent = () => {
   const [userInput, setUserInput] = useState('');
   const [markdownInput, setMarkdownInput] = useState('');
   const [templateInput, setTemplateInput] = useState('');
@@ -242,4 +242,4 @@ const VulnerableMegaComponent = () => {
   );
 };
 
-export default VulnerableMegaComponent;
+export default VulnerableSnykComponent;
